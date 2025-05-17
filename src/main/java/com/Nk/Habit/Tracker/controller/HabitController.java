@@ -27,4 +27,14 @@ public class HabitController {
     public List<Habit> getAllHabits(){
         return habitRepository.findAll();
     }
+
+    // update habit
+    @PutMapping("/{id}")
+    public Habit updateHabit(@PathVariable Long id,@RequestBody Habit habit){
+        Habit existing = habitRepository.findById(id).orElseThrow();
+        existing.setName(habit.getName());
+        existing.setDescription(habit.getDescription());
+        existing.setCompleted(habit.getCompleted());
+        return habitRepository.save(existing);
+    }
 }
