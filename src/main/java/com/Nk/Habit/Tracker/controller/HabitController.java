@@ -37,4 +37,10 @@ public class HabitController {
         existing.setCompleted(habit.getCompleted());
         return habitRepository.save(existing);
     }
+
+    // delete habit
+    @DeleteMapping("/{id}")
+    public void deleteHabit(@PathVariable Long id){
+        habitRepository.deleteById(id);
+    }
 }
