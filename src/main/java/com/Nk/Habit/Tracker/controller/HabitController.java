@@ -21,4 +21,10 @@ public class HabitController {
     public Habit addHabit(@RequestBody Habit habit){
         return habitRepository.save(habit);
     }
+
+    // get all habits
+    @GetMapping
+    public List<Habit> getAllHabits(){
+        return habitRepository.findAll();
+    }
 }
