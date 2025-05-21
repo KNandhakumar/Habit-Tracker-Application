@@ -26,21 +26,23 @@ The backend of the **Habit Tracker App**, built using **Spring Boot** and **MySQ
 
 ## 📂 Folder Structure
 
-```text
+`text
 habit-tracker-backend/
 ├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ ├── com/Nk
-│ │ │ │ ├── habittracker/
-│ │ │ │ │ ├── controller/
-│ │ │ │ │ ├── model/
-│ │ │ │ │ ├── repository/
-│ │ │ │ │ ├── service/
-│ │ │ │ │ └── security/
-│ │ ├── resources/
-│ │ │ ├── application.properties
-├── pom.xml
+│   └── main/
+│       ├── java/
+│       │   └── com/
+│       │       └── Nk/
+│       │           └── habittracker/
+│       │               ├── controller/
+│       │               ├── model/
+│       │               ├── repository/
+│       │               ├── service/
+│       │               └── security/
+│       └── resources/
+│           └── application.properties
+├── pom.xml 
+
 
 
 - **controller/**: Contains REST controllers for handling API requests
