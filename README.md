@@ -26,7 +26,7 @@ The backend of the **Habit Tracker App**, built using **Spring Boot** and **MySQ
 
 ## 📂 Folder Structure
 
-`text
+```text
 habit-tracker-backend/
 ├── src/
 │   └── main/
